@@ -19,16 +19,20 @@
 
                                 <?= $this->session->flashdata('message'); ?>
                                 <div class="text-center">
-                                     <img src="<?php echo base_url(); ?>assets/logo.png" style="width:100px; margin-bottom:20px;">
+                                    <img src="<?php echo base_url(); ?>assets/logo.png"
+                                        style="width:100px; margin-bottom:20px;">
                                 </div>
 
                                 <form class="user" method="post" action="<?= base_url('auth'); ?>">
                                     <div class="form-group">
-                                        <input type="text" class="form-control form-control-user" id="username" name="username" placeholder="Masukan username" value="<?= set_value('email'); ?>">
+                                        <input type="text" class="form-control form-control-user" id="username"
+                                            name="username" placeholder="Masukan username"
+                                            value="<?= set_value('username'); ?>">
                                         <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Masukan Password">
+                                        <input type="password" class="form-control form-control-user" id="password"
+                                            name="password" placeholder="Masukan Password">
                                         <?= form_error('password', '<small class="text-danger pl-3">', '</small>'); ?>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-user btn-block">
@@ -49,5 +53,6 @@
 
     </div>
 
-</div> 
+</div>
+
 <body
