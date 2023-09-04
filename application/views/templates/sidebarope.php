@@ -18,32 +18,44 @@
 
     <!-- LOOPING MENU -->
     <div class="sidebar-heading">
-        admin </div>
+
+        Wali Kelas
+    </div>
 
     <!-- SIAPKAN SUB-MENU SESUAI MENU -->
 
-    <li class="nav-item active">
-        <a class="nav-link pb-0" href="<?= base_url('admin');?>">
+    <li class="nav-item">
+        <a class="nav-link pb-0" href="<?= base_url('Walikelas');?>">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
+        <!-- <li class="nav-item">
+        <a class="nav-link pb-0" href="<?= base_url('user');?>">
+            <i class="fas fa-fw fa-user"></i>
+            <span>My Profile</span></a> -->
     </li>
+    <!-- <li class="nav-item">
+    //     <a class="nav-link pb-0" href="<?= base_url('user/menuutama');?>">
+    //         <i class="fas fa-fw fa-user-tie"></i>
+    //         <span>Menu utama</span></a>
+    // </li> -->
+    <!-- </li>
     <li class="nav-item">
         <a class="nav-link pb-0" href="<?= base_url('admin/role');?>">
             <i class="fas fa-fw fa-user-tie"></i>
             <span>Role</span></a>
-    </li>
-    <li class="nav-item">
+    </li> -->
+    <!-- <li class="nav-item">
         <a class="nav-link pb-0" href="<?= base_url('admin/dataSiswa');?>">
             <i class="fas fa-fw fa-user-tie"></i>
             <span>Data Siswa</span></a>
-    </li>
-    <li class="nav-item">
+    </li> -->
+    <!-- <li class="nav-item">
         <a class="nav-link pb-0" href="<?= base_url('admin/dataGuru');?>">
             <i class="fas fa-fw fa-user-tie"></i>
             <span>Data Guru</span></a>
-    </li>
+    </li> -->
     <li class="nav-item">
-        <a class="nav-link pb-0" href="<?= base_url('admin/dataLaporan');?>">
+        <a class="nav-link pb-0" href="<?= base_url('Walikelas/dataLaporan');?>">
             <i class="fas fa-fw fa-user-tie"></i>
             <span>Data Laporan</span></a>
     </li>
@@ -58,16 +70,7 @@
 
     <!-- SIAPKAN SUB-MENU SESUAI MENU -->
 
-    <li class="nav-item">
-        <a class="nav-link pb-0" href="<?= base_url('user');?>">
-            <i class="fas fa-fw fa-user"></i>
-            <span>My Profile</span></a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link pb-0" href="<?= base_url('user/menuutama');?>">
-            <i class="fas fa-fw fa-user-tie"></i>
-            <span>Menu utama</span></a>
-    </li>
+
 
 
 
