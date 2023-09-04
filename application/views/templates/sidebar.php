@@ -22,11 +22,18 @@
 
     <!-- SIAPKAN SUB-MENU SESUAI MENU -->
 
+
     <li class="nav-item active">
         <a class="nav-link pb-0" href="<?= base_url('admin');?>">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
+
     </li>
+
+    <?php switch ($user_role) {
+
+    case 1:
+        ?>
     <li class="nav-item">
         <a class="nav-link pb-0" href="<?= base_url('admin/role');?>">
             <i class="fas fa-fw fa-user-tie"></i>
@@ -47,6 +54,22 @@
             <i class="fas fa-fw fa-user-tie"></i>
             <span>Data Laporan</span></a>
     </li>
+    <?php
+        break;
+        
+        default:
+        ?>
+    <li class="nav-item">
+        <a class="nav-link pb-0" href="<?= base_url('admin/dataLaporan');?>">
+            <i class="fas fa-fw fa-user-tie"></i>
+            <span>Data Laporan</span></a>
+    </li>
+
+    <?php 
+        break;
+
+    }
+    ?>
 
 
 
